@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/multicheck.jquery.css" type="text/css" />
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+        google.load('jquery','1.7');
+    /*]]>*/
+    </script>
+    <script type="text/javascript" src="js/multicheck.jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h3>Checkboxes with more than 3 options.</h3>
+        <ul>
+            <li>
+                <div>Item 1</div>
+                <input type="checkbox" id="page1" class="parent-check"/>
+                <label for="page1" class="parent-check-label none-selected">
+                    <span class="multicheck none-selected" rel-parent="page1"></span>
+                    View/Edit
+                </label>
+                <ul class="check-level">
+                    <li>
+                        <input type="checkbox" id="page1-fields" class="none-selected" />
+                        <label for="page1-fields" class="check-options none-selected">
+                            <span class="multi-option">View/Edit</span>,
+                            <span class="multi-option">Hide</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div>Item 2</div>
+                <input type="checkbox" id="page2" class="parent-check" checked="checked"/>
+                <label for="page2" class="parent-check-label none-selected">
+                    <span class="multicheck none-selected" rel-parent="page2"></span>
+                    View/Edit
+                </label>
+                <ul class="check-level">
+                    <li>
+                        <input type="checkbox" id="page2-fields" class="none-selected" />
+                        <label for="page2-fields" class="check-options none-selected">
+                            <span class="multi-option">View/Edit</span>,
+                            <span class="multi-option">Hide</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div>Item 3</div>
+                <input type="checkbox" id="page3" class="parent-check"/>
+                <label for="page3" class="parent-check-label none-selected">
+                    <span class="multicheck none-selected" rel-parent="page3"></span>
+                    View/Edit
+                </label>
+                <ul class="check-level">
+                    <li>
+                        <input type="checkbox" id="page3-fields" class="none-selected" />
+                        <label for="page3-fields" class="check-options none-selected">
+                            <span class="multi-option">View/Edit</span>,
+                            <span class="multi-option">Hide</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="page3-fields2" class="none-selected" />
+                        <label for="page3-fields2" class="check-options none-selected">
+                            <span class="multi-option">View/Edit</span>,
+                            <span class="multi-option">Hide</span>,
+                            <span class="multi-option">Remove</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

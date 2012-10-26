@@ -1,0 +1,36 @@
+.multi-option.checked{
+	border-bottom: 1px dotted black;
+}
+.check-options.checked{
+	border-bottom: 1px dotted green;
+}
+.check-options.none-selected{
+	color: grey;
+}
+.check-level span.none-selected{
+	color: grey;
+}
+.check-options.partial-selection{
+	color: black;
+}
+.check-options.all-selected{
+	color: green;
+}
+.multicheck{
+	width: 16px; 
+	height: 16px;
+	display: inline-block;
+	margin-bottom: -3px;
+}
+.multicheck.none-selected{
+	background: url('../images/chk_off_grey.png');
+}
+.multicheck.partial-selection{
+	background: url('../images/chk_on_black.png');
+}
+.multicheck.all-selected{
+	background: url('../images/chk_on_green.png');
+}
+.parent-check{
+	display: none;
+}
